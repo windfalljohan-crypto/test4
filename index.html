@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stark&amp;Aktiv</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+  <style>
+    :root {
+      --bg: #0e1815;
+      --bg2: #172622;
+      --text: #f4f7f5;
+      --muted: #9db3ab;
+      --accent: #fb923c;
+      --accent2: #4ade80;
+    }
+    html, body { background: var(--bg); }
+    .reveal {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 36px;
+      color: var(--text);
+    }
+    .reveal .slides { text-align: left; }
+    .reveal .slides section { padding: 0 60px; box-sizing: border-box; }
+    .reveal h1, .reveal h2, .reveal h3 {
+      font-family: inherit;
+      color: var(--text);
+      text-transform: none;
+      letter-spacing: -0.02em;
+      font-weight: 800;
+      margin: 0 0 0.4em;
+    }
+    .reveal h1 { font-size: 2.4em; line-height: 1.05; }
+    .reveal h2 { font-size: 1.6em; }
+    .reveal p, .reveal li { color: var(--text); line-height: 1.4; }
+    .reveal .muted { color: var(--muted); }
+    .reveal .accent { color: var(--accent); }
+    .reveal ul { list-style: none; margin: 0; padding: 0; display: block; }
+    .reveal ul li { padding-left: 1.2em; position: relative; margin: 0.5em 0; }
+    .reveal ul li::before {
+      content: ""; position: absolute; left: 0; top: 0.62em;
+      width: 0.5em; height: 0.5em; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+    }
+    .reveal .slide-background { background: radial-gradient(circle at 80% 10%, #1f4a3a 0%, var(--bg) 55%); }
+    .tag {
+      display: inline-block; font-size: 0.45em; font-weight: 600;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 1.2em;
+    }
+    .bar {
+      width: 90px; height: 6px; border-radius: 3px; margin: 0.6em 0 1em;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+    }
+    .lead { font-size: 0.75em; color: var(--muted); max-width: 900px; }
+    .cards { display: flex; gap: 24px; margin-top: 1em; }
+    .card {
+      flex: 1; background: var(--bg2); border: 1px solid #2a3f39;
+      border-radius: 16px; padding: 28px 26px; position: relative;
+    }
+    .card.featured { border-color: var(--accent); }
+    .card .badge {
+      position: absolute; top: -14px; right: 20px;
+      background: var(--accent); color: #1a1208; font-size: 0.4em; font-weight: 800;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 5px 12px; border-radius: 999px;
+    }
+    .card .price {
+      font-size: 1.5em; font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .card h3 { font-size: 0.85em; margin: 0.2em 0 0.3em; }
+    .card p { font-size: 0.6em; color: var(--muted); margin: 0; }
+    .reveal .small li { font-size: 0.85em; }
+    .contact p { font-size: 0.8em; margin: 0.3em 0; }
+    .reveal a { color: var(--accent); }
+    .footer { position: fixed; bottom: 18px; left: 40px; font-size: 14px; color: var(--muted); z-index: 20; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- 1. Titel -->
+      <section>
+        <div class="tag" data-id="tag">Karlstad &amp; online</div>
+        <h1 data-id="title">Stark<span class="accent">&amp;</span>Aktiv</h1>
+        <div class="bar"></div>
+        <p class="lead">Kostrådgivning, golffys och personlig träning &ndash; för vanliga människor</p>
+      </section>
+
+      <!-- 2. Om -->
+      <section data-auto-animate>
+        <div class="tag" data-id="tag">Utgångspunkten</div>
+        <h2 data-id="title">Kroppen ska hålla &ndash;<br>på banan och i vardagen</h2>
+        <ul>
+          <li class="fragment fade-up">Nybörjare eller aktiv, gammal eller ung &ndash; träningen skräddarsys efter dig</li>
+          <li class="fragment fade-up">Vi utgår från din nuvarande nivå</li>
+          <li class="fragment fade-up">Ett program som tar dig vidare tryggt och effektivt</li>
+        </ul>
+      </section>
+
+      <!-- 3. Tre tjänster -->
+      <section>
+        <div class="tag">Tjänster</div>
+        <h2>Tre sätt att komma vidare</h2>
+        <div class="cards">
+          <div class="card fragment fade-up">
+            <div class="price">från 1 290 kr</div>
+            <h3>Kostrådgivning</h3>
+            <p>Trygg och personlig, utan pekpinnar. Vetenskapligt förankrad.</p>
+          </div>
+          <div class="card featured fragment fade-up">
+            <div class="badge">Rekommenderas</div>
+            <div class="price">från 990 kr</div>
+            <h3>Specifik golffys</h3>
+            <p>Rörlighet, rotation och svingfart. Perfekt att bygga grunden under hösten och vintern.</p>
+          </div>
+          <div class="card fragment fade-up">
+            <div class="price">Flexibelt</div>
+            <h3>Kombo: kost och träning</h3>
+            <p>Helhetslösningen för snabbare resultat och bättre återhämtning.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Kostrådgivning -->
+      <section data-auto-animate>
+        <div class="tag" data-id="tag">Kostrådgivning &middot; från 1 290 kr</div>
+        <h2 data-id="title">Bättre koll på maten</h2>
+        <ul class="small">
+          <li class="fragment fade-up">Evidensbaserad kunskap &ndash; vetenskapligt förankrad näringslära</li>
+          <li class="fragment fade-up">Individuella mål: vikthållning, viktnedgång eller muskelökning</li>
+          <li class="fragment fade-up">Hållbar struktur för vardagsmaten, utan extremdieter</li>
+          <li class="fragment fade-up">Mer energi under dagen och mindre sötsug</li>
+        </ul>
+      </section>
+
+      <!-- 5. Golffys -->
+      <section data-auto-animate>
+        <div class="tag" data-id="tag">Golffys &middot; från 990 kr</div>
+        <h2 data-id="title">Längre drivar, starkare rygg</h2>
+        <ul class="small">
+          <li class="fragment fade-up">Ökad rörlighet i höfter, bröstrygg och axlar</li>
+          <li class="fragment fade-up">Rotationsstyrka för längre drivar och mer kontroll</li>
+          <li class="fragment fade-up">Skadeförebyggande träning för ländrygg och leder</li>
+          <li class="fragment fade-up">Passar oavsett om du har HCP 36 eller är scratch</li>
+        </ul>
+      </section>
+
+      <!-- 6. Kombo -->
+      <section>
+        <div class="tag">Helhetslösningen</div>
+        <h2>Kost + träning i ett upplägg</h2>
+        <ul>
+          <li class="fragment fade-up">Träningsprogram (gym eller hemma) + licensierad kostrådgivning</li>
+          <li class="fragment fade-up">Golffys + licensierad kostrådgivning</li>
+          <li class="fragment fade-up">Individanpassat och flexibelt</li>
+        </ul>
+      </section>
+
+      <!-- 7. Kontakt -->
+      <section>
+        <div class="tag">Nästa steg</div>
+        <h1>Boka ett<br><span class="accent">kostnadsfritt startsamtal</span></h1>
+        <div class="bar"></div>
+        <div class="contact">
+          <p class="muted">starkochaktiv.se</p>
+          <p class="muted">Karlstad &amp; online</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="footer">Tryck F för helskärm &middot; Esc för översikt &middot; piltangenter för att bläddra</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      width: 1280,
+      height: 720,
+      margin: 0.04,
+      transition: 'slide',
+      backgroundTransition: 'fade',
+      controlsTutorial: false,
+      progress: true,
+      slideNumber: 'c/t',
+      autoAnimateEasing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+      autoAnimateDuration: 0.8
+    });
+  </script>
+</body>
+</html>
